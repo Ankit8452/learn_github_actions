@@ -14,5 +14,9 @@ def action():
 def testPull():
     return jsonify({"message" : "Now EC2 could pull code from private repo"})
 
+@app.route('testagain')
+def testagain():
+    return jsonify({"message" : "Test again"})
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
