@@ -12,7 +12,7 @@ def action():
 
 @app.route('testprivaterepo')
 def testPull():
-    return jsonify({"message" : "Pulling the Private Repo"})
+    return jsonify({"message" : "Now EC2 could pull code from private repo"})
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
